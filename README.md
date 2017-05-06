@@ -17,6 +17,11 @@ For those traditional server-side-render multiple pages website, provide a Vue.j
 
 ## Change Log 
 
+v 0.0.2 Vue.js inside
+- Vue.js 2.3
+- Vuex, mixin common vuex (store, mutation, action)
+- receive & inject server-side init data 
+
 v 0.0.1 basic version
 - compression with Gulp
 - Babel with Gulp
