@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Layout</title>
+
+
+    <!-- Server Side Render Data -->
+    <script>
+        var GLOBAL_DATA = {
+            // Global Enums
+            globalEnum: {
+                // key: value
+                testEnum: {
+                    1: 'ok',
+                    0: 'failure'
+                }
+            },
+            // navbar list
+            navbarList: [
+                {
+                    icon: '',
+                    type: '',
+                    link: ''
+                }
+            ],
+            // regular expression
+            globalReg: {
+                phone: /^1[3456789][0-9]{9}$/,
+                phoneWithException: /^(1[3456789][0-9]{9})|(0{11})$/,
+                email: /^([a-zA-Z0-9_\.\-])+\@@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/,
+            },
+
+            // common utils
+            utils: {
+                // common/utils.js
+            },
+
+            // common store
+            store: {
+                // common/store.js
+            },
+
+            // common actions
+            actions: {
+                // common/actions.js
+            },
+
+            // auth
+            auth: {
+
+            },
+        }
+    </script>
+</head>
+<body>
+
+
+
+
+
+    <div id="app">
+        <!-- common content, eg: #navbar -->
+        <div id="navbar"></div>
+        <!-- page content, @RenderBody() here -->
+        <div id="body">
+            {{test}}
+        </div>
+
+    </div>
+
+    <!-- Lib level js , this is for Development Environment only, when in Production Environment , must be bundled -->
+    <script src="https://cdn.bootcss.com/lodash.js/4.17.4/lodash.min.js"></script>
+    <script src="https://cdn.bootcss.com/vue/2.3.2/vue.js"></script>
+    <script src="https://cdn.bootcss.com/vuex/2.3.1/vuex.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <!-- Whole site level js , this is for Development Environment only, when in Production Environment , must be bundled -->
+
+
+    <!-- Page level js -->
+    <script src="../../static/dist/page/index/index.babel.min.js"></script>
+
+</body>
+</html>
