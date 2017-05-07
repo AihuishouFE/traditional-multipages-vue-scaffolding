@@ -4,25 +4,53 @@ Simple scaffolding multiple pages Vue.js projects for backend server render, eg:
 
 ## Goals 
 
-For those traditional server-side-render multiple pages website, provide a Vue.js project scaffolding.
+For those traditional server-side-render multiple pages websites, provide a Vue.js v2.x project scaffolding.
 
-## Features
+## Outlines
 - [ ] Vue.js & lodash
-- [ ] receive & inject server-side init data 
-- [ ] mixin common vuex (store, mutation, action)
-- [x] compression with Gulp
-- [x] Babel with Gulp
-- [ ] bundle dependency with Gulp 
-- [ ] optimize vue dependency with Webpack 
+- [ ] Receive & inject server-side init data 
+- [ ] Axios 
+- [ ] Mixin common vuex (store, mutation, action)
+- [x] Compression with Gulp
+- [x] ES2015, Babel with Gulp
+- [ ] Bundle dependency with Gulp 
+- [ ] Optimize vue dependency with Webpack 
+
+## Feature details
+
+### Code-Aspect Features
+
+### Module-Aspect Features
+
+### Project-Aspect Features
+
+#### Compression with Gulp
+
+Auto compression
+
+See [gulpfile.js](https://github.com/AihuishouFE/traditional-multipages-vue-scaffolding/blob/master/gulpfile.js)
+
+#### Babel with Gulp
+
+Make full use of ES2015
+
+See [gulpfile.js](https://github.com/AihuishouFE/traditional-multipages-vue-scaffolding/blob/master/gulpfile.js)
+
+
+### Axios 15:15
 
 ## Change Log 
+
+v 0.0.3 Vuex as global varaible
 
 v 0.0.2 Vue.js inside
 - Vue.js 2.3
 - Vuex, mixin common vuex (store, mutation, action)
 - receive & inject server-side init data 
+- axios
+- add New Feature: *Feature Details*
 
 v 0.0.1 basic version
 - compression with Gulp
-- Babel with Gulp
+- ES2015, Babel with Gulp
 - lodash
